@@ -5,64 +5,61 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-
-    tools:context=".MainActivity">
+    tools:context=".Main3Activity">
 
     <TextView
-        android:id="@+id/si"
+        android:id="@+id/signup2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SIGN IN"
+        android:text="Sign Up"
         android:textAlignment="center"
-        android:textSize="60sp" />
+        android:textSize="40sp" />
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="30dp" />
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/username2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:selectAllOnFocus="false"
-        android:singleLine="false"
-        android:text="UserName"
-        android:textAlignment="viewStart" />
+        android:text="Name" />
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="10dp" />
 
     <EditText
-        android:id="@+id/pass"
+        android:id="@+id/pass2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName|textPassword"
-        android:text="Password" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="30dp" />
-
-    <Button
-        android:id="@+id/signin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Sign In"
+        android:text="Name"
         android:textSize="20sp" />
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="150dp" />
+        android:layout_height="10dp" />
 
-    <Button
-        android:id="@+id/signup"
+    <EditText
+        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SignUp"
-        android:textSize="20sp" />
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Email" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="230dp" />
+
+    <Button
+        android:id="@+id/signupf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up" />
 
 </LinearLayout>

@@ -7,7 +7,7 @@
     tools:context=".Main2Activity">
 
     <ListView
-        android:id="@+id/Lvcountries"
+        android:id="@+id/Lvbooks"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>
