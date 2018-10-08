@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity  {
+public class SignIn extends AppCompatActivity  {
     TextView si;
     Button signin, signup;
     EditText username, pass;
@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity  {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.sign_in);
         signin = findViewById(R.id.signin);
 
         username = findViewById(R.id.username);
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity  {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplication(), Main3Activity.class);
+                Intent intent = new Intent(getApplication(), SignUp.class);
                 startActivity(intent);
             }
         });

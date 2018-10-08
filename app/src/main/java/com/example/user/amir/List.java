@@ -10,7 +10,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class Main2Activity extends AppCompatActivity implements AdapterView.OnItemClickListener{
+public class List extends AppCompatActivity implements AdapterView.OnItemClickListener{
 
     ListView Lvbooks;
 
@@ -21,7 +21,7 @@ public class Main2Activity extends AppCompatActivity implements AdapterView.OnIt
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.list_main);
 
 
         Lvbooks = findViewById(R.id.Lvbooks);
@@ -34,29 +34,30 @@ public class Main2Activity extends AppCompatActivity implements AdapterView.OnIt
 
         ArrayAdapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,arrayList);
         Lvbooks.setAdapter(ArrayAdapter);
+        Lvbooks.setOnItemClickListener(this);
     }
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
         String selectedItem= arrayList.get(position);
-        Intent i=new Intent(this,Main2Activity.class);
-        if(selectedItem.equals("Science fiction")) {
+        Intent i=new Intent(this,MainPage.class);
+        if(position==0) {
             i.putExtra("categories", "Science fiction");
         }
-            if(selectedItem.equals("Drama")) {
-                i.putExtra("categories", "Drama");
-            }
-        if(selectedItem.equals("Action and Adventure ")) {
+        if(position==1) {
+            i.putExtra("categories", "Drama");
+        }
+        if(position==2) {
             i.putExtra("categories", "Action and Adventure");
         }
-        if(selectedItem.equals("Mystery ")) {
+        if(position==3) {
             i.putExtra("categories", "Mystery");
         }
-        if(selectedItem.equals("Romance ")) {
+        if(position==4) {
             i.putExtra("categories", "Romance");
         }
-
+        startActivity(i);
         }
     }
 

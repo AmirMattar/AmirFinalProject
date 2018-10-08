@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Main3Activity">
+    android:background="@drawable/as"
+    tools:context=".SignUp">
 
     <TextView
         android:id="@+id/signup2"
@@ -24,8 +25,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:hint="Name"
+        android:inputType="textPersonName" />
 
     <Space
         android:layout_width="match_parent"
@@ -36,8 +37,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="Password"
         android:inputType="textPersonName|textPassword"
-        android:text="Name"
         android:textSize="20sp" />
 
     <Space
@@ -49,8 +50,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Email" />
+        android:hint="Email"
+        android:inputType="textPersonName" />
 
     <Space
         android:layout_width="match_parent"
