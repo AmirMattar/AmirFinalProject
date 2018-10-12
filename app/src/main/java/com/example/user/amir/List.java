@@ -26,6 +26,9 @@ public class List extends AppCompatActivity implements AdapterView.OnItemClickLi
 
         Lvbooks = findViewById(R.id.Lvbooks);
         arrayList.add(new Item(R.drawable.as,"Science fiction"));
+        arrayList.add(new Item(R.drawable.as,"Science fiction"));
+        arrayList.add(new Item(R.drawable.as,"Science fiction"));
+        arrayList.add(new Item(R.drawable.as,"Science fiction"));
       /*  arrayList.add("Drama");
         arrayList.add("Action and Adventure");
         arrayList.add("Mystery");
