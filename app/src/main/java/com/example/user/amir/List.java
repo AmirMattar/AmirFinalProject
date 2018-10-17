@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -25,10 +24,14 @@ public class List extends AppCompatActivity implements AdapterView.OnItemClickLi
 
 
         Lvbooks = findViewById(R.id.Lvbooks);
-        arrayList.add(new Item(R.drawable.as,"Science fiction"));
-        arrayList.add(new Item(R.drawable.as,"Science fiction"));
-        arrayList.add(new Item(R.drawable.as,"Science fiction"));
-        arrayList.add(new Item(R.drawable.as,"Science fiction"));
+        arrayList.add(new Item(R.drawable.fiction,"Science fiction"));
+        arrayList.add(new Item(R.drawable.action,"Action and Adventure"));
+        arrayList.add(new Item(R.drawable.crime,"Mystery"));
+        arrayList.add(new Item(R.drawable.aromance,"Romance"));
+        arrayList.add(new Item(R.drawable.drama,"Drama"));
+
+
+
       /*  arrayList.add("Drama");
         arrayList.add("Action and Adventure");
         arrayList.add("Mystery");
