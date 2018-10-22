@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity
 
 
         } else if (id == R.id.Books) {
-            Fragment fragment=
+
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

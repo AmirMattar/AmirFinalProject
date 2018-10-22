@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".SignIn"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".List" />
-        <activity android:name=".SignIn" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".MainPage" />
         <activity android:name=".OpenPage" />
 
