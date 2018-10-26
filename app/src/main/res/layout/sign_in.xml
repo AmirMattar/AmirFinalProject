@@ -42,8 +42,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Password"
-        android:inputType="textPersonName|textPassword"
-        android:text="Password" />
+        android:inputType="textPersonName|textPassword" />
 
     <Space
         android:layout_width="match_parent"

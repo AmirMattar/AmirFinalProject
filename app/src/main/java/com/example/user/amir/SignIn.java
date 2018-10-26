@@ -58,7 +58,7 @@ public class SignIn extends AppCompatActivity implements View.OnClickListener {
         //updateUI(currentUser);
     }
 
-    public void signIn(String email, String password) {
+    public void signIn(final String email, final String password) {
         mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
@@ -67,13 +67,13 @@ public class SignIn extends AppCompatActivity implements View.OnClickListener {
                             // Sign in success, update UI with the signed-in user's information
                             Log.d(TAG, "signInWithEmail:success");
                             FirebaseUser user = mAuth.getCurrentUser();
-                            Intent i = new Intent(SignIn.this, List.class);
+                            Intent i = new Intent(getApplication(), List.class);
                             startActivity(i);
                             //updateUI(user);
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w(TAG, "signInWithEmail:failure", task.getException());
-                            Toast.makeText(SignIn.this, "Authentication failed.",
+                            Toast.makeText(SignIn.this, "Authentication failed.:"+email+" "+password,
                                     Toast.LENGTH_SHORT).show();
                             //updateUI(null);
                         }

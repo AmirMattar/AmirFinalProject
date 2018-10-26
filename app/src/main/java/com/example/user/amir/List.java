@@ -47,9 +47,10 @@ public class List extends AppCompatActivity implements AdapterView.OnItemClickLi
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
         //String selectedItem= arrayList.get(position);
-        Intent i=new Intent(this,MainPage.class);
+        Intent i=new Intent(this,OpenPage.class);
         if(position==0) {
             i.putExtra("categories", "Science fiction");
+
         }
         if(position==1) {
             i.putExtra("categories", "Drama");
