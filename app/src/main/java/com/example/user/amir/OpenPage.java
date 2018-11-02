@@ -22,8 +22,12 @@ public class OpenPage extends AppCompatActivity implements AdapterView.OnItemCli
         setContentView(R.layout.activity_open_page);
 
         lvSubCategory =findViewById(R.id.lvSubCategory);
-        fillSubCategoriesList();
+        arrayList=new ArrayList<>();
+        arrayList.add("AA");
+        arrayList.add("AB");
+     //   fillSubCategoriesList();
         arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, arrayList);
+        lvSubCategory.setOnItemClickListener(this);
 
     }
     public void fillSubCategoriesList(){
