@@ -46,26 +46,11 @@ public class List extends AppCompatActivity implements AdapterView.OnItemClickLi
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-        //String selectedItem= arrayList.get(position);
         Intent i=new Intent(this,OpenPage.class);
-        if(position==0) {
-            i.putExtra("categories", "Science fiction");
+        i.putExtra("categories", arrayList.get(position).toString());
 
-        }
-        if(position==1) {
-            i.putExtra("categories", "Drama");
-        }
-        if(position==2) {
-            i.putExtra("categories", "Action and Adventure");
-        }
-        if(position==3) {
-            i.putExtra("categories", "Mystery");
-        }
-        if(position==4) {
-            i.putExtra("categories", "Romance");
-        }
         startActivity(i);
-        }
     }
+}
 
 

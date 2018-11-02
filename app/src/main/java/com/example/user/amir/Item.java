@@ -2,6 +2,7 @@ package com.example.user.amir;
 
 public class Item {
     private int image;
+    private String name;
 
     public void setImage(int image) {
         this.image = image;
@@ -26,5 +27,7 @@ public class Item {
         this.name = name;
     }
 
-    private String name;
+    public String toString(){
+        return name;
+    }
 }

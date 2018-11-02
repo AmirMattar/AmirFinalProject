@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".CameraGalleryActivity"
+            android:name=".List"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -23,7 +23,8 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".OpenPage" />
         <activity android:name=".SignUp" />
-        <activity android:name=".List"></activity>
+        <activity android:name=".CameraGalleryActivity" />
+        <activity android:name=".DetailedBookActivity"></activity>
     </application>
 
 </manifest>
