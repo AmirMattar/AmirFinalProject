@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".FireActivity"
+            android:name=".MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".SignIn" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".FireActivity" />
         <activity android:name=".OpenPage" />
         <activity android:name=".SignUp" />
         <activity android:name=".CameraGalleryActivity" />

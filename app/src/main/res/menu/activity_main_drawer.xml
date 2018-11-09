@@ -6,13 +6,21 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/NewBooks"
-
+            android:icon="@drawable/ic_new_books"
             android:title="New Books" />
         <item
             android:id="@+id/Books"
-            android:title="Books"/>
-    </group>
+            android:icon="@drawable/ic_all_books"
+            android:title="Books" />
 
+        <item
+            android:id="@+id/BestSellers"
+            android:icon="@drawable/ic_new_york"
+            android:title="BestSellers" />
+
+
+
+    </group>
 
 
 </menu>
