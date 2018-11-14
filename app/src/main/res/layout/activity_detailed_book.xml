@@ -7,4 +7,29 @@
     android:orientation="vertical"
     tools:context=".DetailedBookActivity">
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="139dp"
+        android:layout_height="202dp"
+        app:srcCompat="@drawable/action" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btAddToWishList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WishList"
+        android:textSize="24sp" />
 </LinearLayout>

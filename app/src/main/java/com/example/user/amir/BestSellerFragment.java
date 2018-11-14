@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 public class BestSellerFragment extends Fragment {
     @Nullable
-   @Override
+    @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.best_sellers,container,false);
     }
