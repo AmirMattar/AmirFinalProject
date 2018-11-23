@@ -29,12 +29,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical" >
 
-                <TextView
-                    android:id="@+id/WriterInfo"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="John Ronald Reuel Tolkien, was an English writer, poet, philologist, and university professor who is best known as the author of the classic high fantasy works The Hobbit, The Lord of the Rings, and The Silmarillion."
-                    android:textSize="20sp" />
             </LinearLayout>
         </ScrollView>
 

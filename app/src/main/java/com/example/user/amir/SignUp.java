@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -21,9 +22,12 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
     TextView signup2;
     Button signupf;
     EditText username2,pass2,email;
-    private FirebaseAuth mAuth;
+
     final String TAG="firebase";
 
+    private AutoCompleteTextView mEmailView;
+    private static final int REQUEST_READ_CONTACTS = 0;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,15 +44,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
         mAuth = FirebaseAuth.getInstance();
 
     }
-    public void openActivity2(){
 
-    }
-    public void onStart() {
-        super.onStart();
-        // Check if user is signed in (non-null) and update UI accordingly.
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        //updateUI(currentUser);
-    }
     public void createUser(String email,String password){
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -78,10 +74,11 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
     public void onClick(View v) {
         if(v == signupf){
             String user = email.getText().toString();
-            if(user.equals("")){
+            String pass = pass2.getText().toString();
+            if(user.equals("")&& pass.equals("")){
 
             }else{
-                createUser(user,"AbcDefg123");
+                createUser(user,pass);
             }
         }
     }

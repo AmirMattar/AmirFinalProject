@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".DetailedBookActivity"
+            android:name=".SignIn"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -19,13 +19,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignIn" />
+        <activity android:name=".SignUp" />
         <activity android:name=".FireActivity" />
         <activity android:name=".OpenPage" />
-        <activity android:name=".SignUp" />
+        <activity android:name=".DetailedBookActivity" />
         <activity android:name=".CameraGalleryActivity" />
         <activity android:name=".List" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SharedActivity"></activity>
     </application>
 
 </manifest>
