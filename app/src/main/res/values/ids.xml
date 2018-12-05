@@ -2,4 +2,5 @@
 <resources>
     <item name="tvName" type="id" />
     <item name="fragment_container" type="id">fragment_container</item>
+    <item name="WriterInfo" type="id">writerinfo</item>
 </resources>
