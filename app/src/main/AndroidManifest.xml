@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".AlertDialogActivity"
+            android:name=".MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -27,9 +27,10 @@
         <activity android:name=".DetailedBookActivity" />
         <activity android:name=".CameraGalleryActivity" />
         <activity android:name=".List" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".AlertDialogActivity" />
         <activity android:name=".SharedActivity" />
-        <activity android:name=".SignIn"></activity>
+        <activity android:name=".SignIn" />
+        <activity android:name=".AboutProject"></activity>
     </application>
 
 </manifest>

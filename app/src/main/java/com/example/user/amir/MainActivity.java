@@ -1,5 +1,6 @@
 package com.example.user.amir;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -59,14 +60,25 @@ public class MainActivity extends AppCompatActivity
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        Intent GoToAlert = new Intent(getApplicationContext(), AlertDialogActivity.class);
+        Intent GoToAbout = new Intent(getApplicationContext(), AboutProject.class);
+
+        switch (item.getItemId()) {
+            case R.id.action_settings:
+                GoToAlert = new Intent(getApplicationContext(), AlertDialogActivity.class);
+                startActivity(GoToAlert);
+                break;
+            case R.id.about:
+                GoToAlert = new Intent(getApplicationContext(), AboutProject.class);
+                startActivity(GoToAbout);
+                break;
+            case R.id.sign_out:
+                GoToAlert = new Intent(getApplicationContext(), AlertDialogActivity.class);
+                startActivity(GoToAlert);
+                break;
         }
-
-        return super.onOptionsItemSelected(item);
+        return true;
     }
 
     @SuppressWarnings("StatementWithEmptyBody")
